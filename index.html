@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Simpleas3logger by rfaisal</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Simpleas3logger</h1>
+        <p>SimpleAS3Logger is a simple, flexible logging class in AS3 that comes with a simple php script to save important logging info in a mysql database.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/rfaisal/SimpleAS3Logger" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/rfaisal/SimpleAS3Logger/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/rfaisal/SimpleAS3Logger/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>SimpleAS3Logger</h1>
+
+<p>SimpleAS3Logger is a simple, flexible logging class in AS3 that comes with a simple php script to save important logging info in a mysql database.</p>
+
+<h2>License</h2>
+
+<p>SimpleAS3Logger is published under MIT License. That means you have the right to do whatever you want with it. For more info, scroll down to the bottom for License terms.</p>
+
+<h2>Installation</h2>
+
+<ol>
+<li>Run this command <code>git clone git://github.com/rfaisal/SimpleAS3Logger.git</code> or download as a zip.</li>
+<li>Server setup: Run simple_as3_logger.sql on your database. Write down the database info in SimpleAS3LoggerServer.php</li>
+<li>Client setup: Write the location of SimpleAS3LoggerServer.php file to LogWritter.dbServerURL variable.</li>
+<li>Security (Optional): Change LogWritter.authString with a random string and write the same value to SimpleAS3LoggerServer.php's first if condition.</li>
+<li>Possible extensions (for your project):
+5.1. Add to the LoggingLevel class for more logging levels. 
+5.2. For each new logging level create a someLevelProcessingLogger class that extends ProcessingLogger abstract class.
+5.3. Write more functions to LogWritter class for writing to more output areas like email, file, etc.
+5.4. In the <code>ProcessingLogger</code> class's <code>log(...)</code> function : change <code>...else if (next != null)...</code> to <code>...if (next != null)...</code> if you want all the higer level to process the same log, i.e., logging to Trace will log to all the upper levels.</li>
+</ol><h2>Contribute to this project</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Contribute and Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol><h2>Recognition</h2>
+
+<ol>
+<li>Faisal Rahman : the original author of the project.</li>
+<li>Faisal Rahman, Gabriel Bucknall : contributors to this project.</li>
+<li>Wikipedia : concept of the Chain of responsibility pattern. Link: <a href="http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern">http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern</a>
+</li>
+<li>Gabriel Bucknall : singleton implementation in as3. Link: <a href="http://blog.pixelbreaker.com/actionscript-3-0/as30-better-singletons">http://blog.pixelbreaker.com/actionscript-3-0/as30-better-singletons</a>
+</li>
+<li>Java Logging API.</li>
+</ol><h2>License Terms</h2>
+
+<p>Copyright (C) 2011 Faisal Rahman</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/rfaisal">rfaisal</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-40629021-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
