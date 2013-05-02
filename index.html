@@ -47,6 +47,10 @@
 
 <p>SimpleAS3Logger is published under MIT License. That means you have the right to do whatever you want with it. For more info, scroll down to the bottom for License terms.</p>
 
+<h2>Documentation</h2>
+
+<p>The documentation of this project can be found at <a href="http://rfaisal.github.io/SimpleAS3Logger/doc/">http://rfaisal.github.io/SimpleAS3Logger/doc/</a> . </p>
+
 <h2>Installation</h2>
 
 <ol>
@@ -54,11 +58,17 @@
 <li>Server setup: Run simple_as3_logger.sql on your database. Write down the database info in SimpleAS3LoggerServer.php</li>
 <li>Client setup: Write the location of SimpleAS3LoggerServer.php file to LogWritter.dbServerURL variable.</li>
 <li>Security (Optional): Change LogWritter.authString with a random string and write the same value to SimpleAS3LoggerServer.php's first if condition.</li>
-<li>Possible extensions (for your project):
-5.1. Add to the LoggingLevel class for more logging levels. 
-5.2. For each new logging level create a someLevelProcessingLogger class that extends ProcessingLogger abstract class.
-5.3. Write more functions to LogWritter class for writing to more output areas like email, file, etc.
-5.4. In the <code>ProcessingLogger</code> class's <code>log(...)</code> function : change <code>...else if (next != null)...</code> to <code>...if (next != null)...</code> if you want all the higer level to process the same log, i.e., logging to Trace will log to all the upper levels.</li>
+<li>
+<p>Possible extensions (for your project):</p>
+
+<p>5.1  Add to the LoggingLevel class for more logging levels. </p>
+
+<p>5.2  For each new logging level create a someLevelProcessingLogger class that extends ProcessingLogger abstract class.</p>
+
+<p>5.3  Write more functions to LogWritter class for writing to more output areas like email, file, etc.</p>
+
+<p>5.4  In the <code>ProcessingLogger</code> class's <code>log(...)</code> function : change <code>...else if (next != null)...</code> to <code>...if (next != null)...</code> if you want all the higer level to process the same log, i.e., logging to Trace will log to all the upper levels.</p>
+</li>
 </ol><h2>Contribute to this project</h2>
 
 <ol>
