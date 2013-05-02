@@ -4,6 +4,9 @@ SimpleAS3Logger is a simple, flexible logging class in AS3 that comes with a sim
 ## License
 SimpleAS3Logger is published under MIT License. That means you have the right to do whatever you want with it. For more info, scroll down to the bottom for License terms.
 
+## Documentation
+The documentation of this project can be found at http://rfaisal.github.io/SimpleAS3Logger/doc/ . 
+
 ## Installation
 1. Run this command `git clone git://github.com/rfaisal/SimpleAS3Logger.git` or download as a zip.
 2. Server setup: Run simple_as3_logger.sql on your database. Write down the database info in SimpleAS3LoggerServer.php
