@@ -14,7 +14,11 @@ package org.rfaisal.logging
 		 * @param	logMsg The logging message
 		 * @param	data Additional data. Saved/shown as a JSON object.
 		 */
-		function log(level:uint, className:String, logMsg:String="", data:Object = null);
+		function log(level:uint, className:String, logMsg:String = "", data:Object = null):void;
+		/**
+		 * Set the next logger in the chain of responsibility.
+		 */
+		function set next(v:IProcessingLogger):void;
 	}
 	
 }
