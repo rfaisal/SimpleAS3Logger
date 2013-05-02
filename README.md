@@ -10,10 +10,14 @@ SimpleAS3Logger is published under MIT License. That means you have the right to
 3. Client setup: Write the location of SimpleAS3LoggerServer.php file to LogWritter.dbServerURL variable.
 4. Security (Optional): Change LogWritter.authString with a random string and write the same value to SimpleAS3LoggerServer.php's first if condition.
 5. Possible extensions (for your project):
-	5.1. Add to the LoggingLevel class for more logging levels. 
-	5.2. For each new logging level create a someLevelProcessingLogger class that extends ProcessingLogger abstract class.
-	5.3. Write more functions to LogWritter class for writing to more output areas like email, file, etc.
-	5.4. In the `ProcessingLogger` class's `log(...)` function : change `...else if (next != null)...` to `...if (next != null)...` if you want all the higer level to process the same log, i.e., logging to Trace will log to all the upper levels.
+ 
+	5.1  Add to the LoggingLevel class for more logging levels. 
+
+   	5.2  For each new logging level create a someLevelProcessingLogger class that extends ProcessingLogger abstract class.
+   
+	5.3  Write more functions to LogWritter class for writing to more output areas like email, file, etc.
+   
+ 	5.4  In the `ProcessingLogger` class's `log(...)` function : change `...else if (next != null)...` to `...if (next != null)...` if you want all the higer level to process the same log, i.e., logging to Trace will log to all the upper levels.
 	
 
 ## Contribute to this project
